@@ -15,6 +15,32 @@ const mainNavItems: NavItem[] = [
         href: dashboard(),
         icon: LayoutGrid,
     },
+
+    {
+        title: 'Transaksi',
+        href: '/transactions',
+        icon: Folder, // atau pilih icon lain dari lucide-vue-next
+    },
+    {
+        title: 'CRM',
+        href: '/crm',
+        icon: Folder, // atau pilih icon lain dari lucide-vue-next
+    },
+    {
+        title: 'Kasir',
+        href: '/kasir',
+        icon: Folder, // atau pilih icon lain dari lucide-vue-next
+    },
+    {
+        title: 'Manajemen Kolam',
+        href: '/manajemen-kolam',
+        icon: Folder, // atau pilih icon lain dari lucide-vue-next
+    },
+    {
+        title: 'Manajemen Produk',
+        href: '/manajemen-produk',
+        icon: Folder, // atau pilih icon lain dari lucide-vue-next
+    },
 ];
 
 const footerNavItems: NavItem[] = [
