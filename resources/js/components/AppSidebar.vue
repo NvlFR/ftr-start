@@ -6,7 +6,7 @@ import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, Sid
 import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/vue3';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-vue-next';
+import { BookOpen, Folder, LayoutGrid, ArrowLeftRight, CircleUser, PiggyBank, Waves, Package } from 'lucide-vue-next';
 import AppLogo from './AppLogo.vue';
 
 const mainNavItems: NavItem[] = [
@@ -19,27 +19,27 @@ const mainNavItems: NavItem[] = [
     {
         title: 'Transaksi',
         href: '/transactions',
-        icon: Folder, // atau pilih icon lain dari lucide-vue-next
+        icon: ArrowLeftRight,
     },
     {
         title: 'CRM',
         href: '/crm',
-        icon: Folder, // atau pilih icon lain dari lucide-vue-next
+        icon: CircleUser,
     },
     {
         title: 'Kasir',
         href: '/kasir',
-        icon: Folder, // atau pilih icon lain dari lucide-vue-next
+        icon: PiggyBank,
     },
     {
         title: 'Manajemen Kolam',
         href: '/manajemen-kolam',
-        icon: Folder, // atau pilih icon lain dari lucide-vue-next
+        icon: Waves, // atau pilih icon lain dari lucide-vue-next
     },
     {
         title: 'Manajemen Produk',
         href: '/manajemen-produk',
-        icon: Folder, // atau pilih icon lain dari lucide-vue-next
+        icon: Package, // atau pilih icon lain dari lucide-vue-next
     },
 ];
 

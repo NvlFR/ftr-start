@@ -3,6 +3,7 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import { dashboard } from '@/routes';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/vue3';
+import Button from '@/components/ui/button/Button.vue';
 
 // Breadcrumbs
 const breadcrumbs: BreadcrumbItem[] = [
@@ -53,11 +54,11 @@ function formatCurrency(value: number) {
           >
             <p class="font-semibold">{{ product.name }}</p>
             <p class="text-gray-600">{{ formatCurrency(product.price) }}</p>
-            <button
+            <Button
               class="mt-2 px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
             >
               Tambah
-            </button>
+            </Button>
           </div>
         </div>
       </div>
@@ -85,12 +86,12 @@ function formatCurrency(value: number) {
             <span>Total</span>
             <span>{{ formatCurrency(total) }}</span>
           </div>
+<!-- class="mt-4 w-full px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700" -->
+          <Button
 
-          <button
-            class="mt-4 w-full px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
           >
             Bayar
-          </button>
+          </Button>
         </div>
       </div>
     </div>
