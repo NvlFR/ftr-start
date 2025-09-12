@@ -28,6 +28,9 @@ Route::get('/manajemen-kolam', function () {
 Route::get('/manajemen-produk', function () {
     return Inertia::render('ManajemenProduk');
 })->name('manajemen-produk');
+Route::get('/offline', function () {
+    return view('offline');
+});
 
 
 require __DIR__.'/settings.php';
